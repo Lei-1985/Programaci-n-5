@@ -1,0 +1,39 @@
+{%extends "base.html"%}
+
+{%block content%}
+<div class="container" style="height: 100vh;">
+    <h1 class="display-1 p-5 text-center" style="color: #FFFFFC;">Meet the team</h1>
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="{{url_for('static', filename='images/roger.svg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Roger Urrutia</h5>
+          <p class="card-text">My name is Roger Urrutia. I am a student of the UIP. I am a Freshman. I love spending time coding and I really enjoyed the opportunity of creating this little app for everyone to see.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="{{url_for('static', filename='images/Himani.svg')}}" alt="Himani">
+        <div class="card-body">
+          <h5 class="card-title">Himani Budhrani</h5>
+          <p class="card-text">Hi, my name is Himani Budhrani, i am currently living in Panama City Panama. I am studying Computer Science in UIP .I have always been interested in everything related to computers. 
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="{{url_for('static', filename='images/Jose.svg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">José Segura</h5>
+          <p class="card-text">My name is Jose Segura, I am 27 years old and i am studying Systems Engineering at UIP. I work as a aircraft mechanic and I love programming.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="{{url_for('static', filename='images/leidys.svg')}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Leidys Tello</h5>
+          <p class="card-text">Hi my name is Leidys Tello, i am from Panama City Panama. I am currently finishing my degree in Computer Engineering in UIP. I am interested by the whole subject of space, galaxies, black holes, etc.
+           </p>
+        </div>
+      </div>
+    </div>
+  </div>
+{%endblock%}

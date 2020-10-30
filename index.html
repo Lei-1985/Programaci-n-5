@@ -1,0 +1,18 @@
+{%extends "base.html"%}
+
+{%block content%}
+    <div id="main" class="p-5" style="height: 85vh;">
+        <div class="container">
+            <div class="row pt-5" style="height: 65vh;">
+                <div class="col-md-6 align-self-center">
+                    <img id="astronaut" src="{{url_for('static',filename='images/astronaut.svg')}} " alt="astronaut">
+                </div>
+                <div class="col-md-6 text-center align-self-center text-white">
+                    <h1 class="display-1">Listen. Learn. Explore</h1>
+                    <p>Listening is one of the best ways to learn. Let's explore our beautiful planet with Global Voice!</p>
+                    <a href="{{url_for('chat')}}"><button id="boton" class="btn btn-primary" style="background-color: #E57E25; border: none; border-radius: 10px; width: 50%;"><strong>Test the app!</strong></button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+{%endblock%}
